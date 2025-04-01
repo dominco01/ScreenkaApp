@@ -1,0 +1,52 @@
+.Screenka{
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: justify;
+}
+
+@media screen and (min-width: 700px){
+    ::-webkit-scrollbar {
+        width: 100%;
+        -webkit-appearance: none;
+    }
+  }
+
+.Screenka>h1, .Screenka>h2, .Screenka>h3, .Screenka>h4,.Screenka>h5, .Screenka>footer
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Screenka h1{
+    background: -webkit-linear-gradient(top, rgb(231, 231, 231), rgba(255, 255, 255, 0));
+    background: -o-linear-gradient(top, rgb(231, 231, 231), rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(top, rgb(231, 231, 231), rgba(255, 255, 255, 0));
+    background: linear-gradient(to bottom, rgb(231, 231, 231), rgba(255, 255, 255, 0)); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.Screenka h2, .Screenka h3, .Screenka h4,.Screenka h5, .Screenka footer{opacity: 0.8;} /* przez gradient h1*/
+
+/*.Screenka>h2{
+    background: -webkit-linear-gradient(top, rgb(172,172,172), rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(top, rgb(172, 172, 172), rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(top, rgb(172, 172, 172), rgba(255, 255, 255, 0));
+    background: linear-gradient(to bottom, rgb(172, 172, 172), rgba(255, 255, 255, 0)); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}*/
+
+.Screenka>footer
+{
+    text-align: center;
+}
+
+.Screenka>h4{
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.Screenka .pre-pre-post{
+    margin: 50px 0px;
+}

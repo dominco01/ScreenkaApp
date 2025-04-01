@@ -1,0 +1,11 @@
+button.upload
+{
+    padding: 4px 0px;
+    align-self: center;
+    margin: 15px;
+    width:113px;
+}
+
+button.upload[disabled].bcolor-gray{
+    opacity: 1 !important;
+}

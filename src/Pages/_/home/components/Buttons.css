@@ -1,0 +1,80 @@
+/*PLUS*/
+.button-plus{
+    padding: 10px;
+    text-align:center;
+
+    width: 100%;
+    position: relative;
+    font-weight: normal;
+}
+
+.button-plus-red{
+    background-color: rgba(255, 56, 56);
+}
+
+.button-plus>div
+{
+    font-size: 50px;
+    margin-top: -5px;
+    color:white;
+
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.button-plus .rotate
+{
+    transform: rotate(-45deg);
+}
+
+/*SCREENKA*/
+@keyframes shine{
+    30% {
+        box-shadow: inset 0px 0px 10px 10px rgba(255, 255, 255, 0.2);filter:brightness(150%)
+    }
+    100% {}
+}
+
+.button-screenka{  
+    background-size: contain;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    position: relative;
+
+    width: 100%;
+
+    animation: shine 1.5s ease-out;
+}
+
+.button-screenka h2{font-weight: bold;color: white;line-height:28px}
+.button-screenka span{
+    display: inline-block;
+    margin-left: 40px;
+}
+.button-screenka>img{
+    position: absolute;
+    width: 26px;
+    height: 25px;
+}
+
+.button-screenka>img:first-child{
+    top:4px;
+    right:4px;
+}
+
+.button-screenka>img:last-child{
+    left: 4px;
+    bottom:4px;
+}
+
+/*WEEK UPLOADS*/
+.button-week-uploads{
+    padding: 10px;
+    text-align:center;
+
+    width: 100%;
+}

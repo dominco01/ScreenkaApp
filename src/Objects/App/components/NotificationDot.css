@@ -1,0 +1,54 @@
+.noti-dot
+{
+    position: absolute;
+    right:-12px;
+    top:-12px;
+
+    
+    height: 28px;
+    width: 28px;
+    border-radius: 14px;
+
+    animation: showNotificationDot 0.5s ease-in-out;
+    -webkit-animation: showNotificationDot 0.5s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@keyframes showNotificationDot {
+    0% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+.noti-dot>div{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+
+    animation: switchNotificationDot 0.5s ease-in-out;
+    -webkit-animation: switchNotificationDot 0.5s ease-in-out;
+}
+
+@keyframes switchNotificationDot {
+    0% {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+
+        opacity: 0.3;
+    }
+    100% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+
+        opacity: 1;
+    }
+}

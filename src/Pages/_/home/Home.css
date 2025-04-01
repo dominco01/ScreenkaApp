@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap');
+
+.home{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.home-title
+{
+    font-weight:bold;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items:baseline;
+
+    padding-right: 0px;
+}
+
+.home-title span{font-size: 30px;margin-right: 10px;}
+
+.home>:first-child{
+    margin-bottom: 0px;
+}
+
+.home>div{
+    margin-bottom: 15px;
+}
+
+.home-blur-dark-pre
+{
+    transition: filter 0.4s ease-in-out;
+    will-change: filter;
+}
+
+.home-blur-dark
+{
+    filter: blur(2px) brightness(60%);
+}
+
+@keyframes show{
+    0% {height:0px;overflow:hidden;}
+    100%{overflow: hidden;}
+}
+.home-button-effect{
+    transition: height 0.2s ease-in-out;
+    animation: show 0.2s ease-in;
+    will-change: height;
+}

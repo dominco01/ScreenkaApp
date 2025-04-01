@@ -1,0 +1,30 @@
+
+.start>:first-child{
+    width: 100%;
+    height: 100%;
+}
+
+
+.start-pages
+{
+    display: flex;
+    width: 200%;
+    height: 100%;
+
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.start-pages>*{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.start-pages>*::-webkit-scrollbar {
+    display: none;
+  }
+  

@@ -1,0 +1,19 @@
+/*APP*/
+
+.app-conteiner{
+    display: grid;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 20px;
+}
+
+/*USER*/
+
+.home-user-conteiner{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home-user-conteiner img, .home-user-conteiner .text{
+    margin: 5px;
+}

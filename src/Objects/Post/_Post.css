@@ -1,0 +1,207 @@
+.pre-pre-post {   margin-bottom: 5px;position:relative}
+.pre-pre-post .nickname
+{
+    display: flex; align-items: center;
+}
+
+.pre-pre-post .nickname>* 
+{
+    margin: 5px;
+}
+
+.post{
+    position: relative;
+    border-radius: 20px;/*takie jakie nickname src*/
+
+    padding: 10px;
+    overflow: hidden;
+}
+
+.post .date
+{
+    position: absolute;
+    top:0px;
+    right:0px;
+    font-size: 15px;
+    padding: 0px 10px;
+    opacity: 0.2;
+    text-align: end;
+}
+
+.post .head
+{
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.post .head>:nth-child(2)
+{
+    text-align: center;
+    width: 100%;
+}
+
+.post .pre-body
+{
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    transition: height ease-in-out 1s;
+    will-change: height;
+}
+
+/*MINI POST*/
+
+.mini-post-pre, .mini-post
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.mini-post-pre>:first-child{margin: 0px 10px;}
+
+.mini-post{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    padding:10px 0px;
+    box-sizing: border-box;
+    border-bottom: 1px rgba(255,255,255, 0.1) solid;
+    align-items: center;
+}
+
+.mini-post>*{margin-right: 10px;}
+
+.mini-post::after {
+    content: '';
+position: absolute;
+left: 0;
+z-index: 100;
+width: 100%;
+height: 5px;
+background: red;
+
+bottom: 0;
+background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.35), transparent);
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), transparent);
+}
+
+.mini-post .text
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.mini-post .infos{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    white-space: nowrap;
+    top: 5px;
+    right:7px;
+    margin:0;
+    opacity: 0.5;
+}
+.mini-post .infos>*{ font-size: 20px;margin-left: 5px;}
+
+/*posts*/
+.posts{
+    display: flex;
+    flex-direction: column;
+}
+
+.posts h1,.posts h2,.posts h3{
+    margin-left: 15px;
+}
+
+.posts-list
+{
+    display:flex;
+    flex-direction: column;
+}
+
+.posts-list>*{margin-bottom: 10px;}
+
+.post .body{height: 100%; display: flex;flex-direction: column;}
+
+.post .content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+}
+.post .pre-fullcontent{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+.post .fullcontent
+{    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+}
+
+.post .fullcontent .scroll
+{
+    max-height: 100%;
+    overflow:auto;
+    max-width: 100%;
+}
+
+/*imgs*/
+.post .content img{
+  max-height: 100%;
+  max-width:  100%;
+  object-fit:scale-down;
+
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.post .fullcontent .scroll>*{padding: 15px;}
+.post .fullcontent .scroll>img
+{
+    object-fit: cover;
+    max-width: 100%;
+    padding: 0px;
+}
+
+/*MINIPOSTS*/
+
+.miniposts{
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 90px) /*NOT GOOD : odejmuje h2 komponenta wyzej */
+}
+
+.miniposts-legend
+{
+    padding: 20px 10px 20px 10px;
+    position: relative;
+}
+.miniposts-legend .bar>:last-child{margin-left: auto;}
+.miniposts-legend .bar{display: flex;width: 100%;}
+.miniposts-list
+{
+    display:flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 100%;
+}
